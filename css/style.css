@@ -129,7 +129,11 @@ img, svg { max-width: 100%; display: block; }
   letter-spacing: 0.5px;
   color: var(--green-900);
 }
-.brand .mark { color: var(--gold); }
+.brand-logo {
+  height: 46px;
+  width: auto;
+  display: block;
+}
 .brand-sub {
   display: block;
   font-family: 'Inter', sans-serif;
@@ -517,7 +521,8 @@ form.contact-form {
   letter-spacing: 1px;
   margin-bottom: 1em;
 }
-.footer-brand { font-family: 'Oswald', sans-serif; color: var(--white); font-size: 1.1rem; text-transform: uppercase; margin-bottom: 10px; }
+.footer-brand { display: flex; align-items: center; gap: 12px; font-family: 'Oswald', sans-serif; color: var(--white); font-size: 1.1rem; text-transform: uppercase; margin-bottom: 14px; }
+.footer-brand img { height: 40px; width: auto; display: block; }
 .footer-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
 .footer-grid a:hover { color: var(--gold-light); }
 .footer-bottom {
