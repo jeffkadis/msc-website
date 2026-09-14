@@ -16,11 +16,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var form = document.querySelector('.contact-form');
   if (form) {
+    var CONTACT_EMAIL = 'jeff.kadis@multisportconstruction.com';
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      var name = form.querySelector('#name').value.trim();
+      var email = form.querySelector('#email').value.trim();
+      var phone = form.querySelector('#phone').value.trim();
+      var service = form.querySelector('#service').value;
+      var message = form.querySelector('#message').value.trim();
+
+      var subject = 'Quote request: ' + service + ' — ' + name;
+      var bodyLines = [
+        'Name: ' + name,
+        'Email: ' + email,
+        'Phone: ' + (phone || '—'),
+        'Service needed: ' + service,
+        '',
+        'Project details:',
+        message
+      ];
+      var mailtoUrl = 'mailto:' + CONTACT_EMAIL
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+      window.location.href = mailtoUrl;
+
       var note = form.querySelector('.form-status');
       if (note) {
-        note.textContent = 'Thanks — your message details are ready. Connect this form to your email or CRM to send it automatically.';
+        note.textContent = 'Opening your email app with this message pre-filled — just hit send there to reach us.';
       }
     });
   }
