@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Multi Sport Construction AB</title>
+<meta name="description" content="Notable projects from Multi Sport Construction AB, including Strawberry Arena, Stockholm Stadion, Olympia Stadion and Bro Hof Slott Golf Club.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 36px; }
+  .filter-btn {
+    font-family: 'Oswald', sans-serif; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.8px;
+    padding: 9px 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--white);
+    color: var(--text-dark); cursor: pointer;
+  }
+  .filter-btn.active, .filter-btn:hover { background: var(--green-900); color: var(--white); border-color: var(--green-900); }
+  .project-card[hidden] { display: none; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="mark">◆</span> Multi Sport Construction
+      <span class="brand-sub">Founded 2006 · Sweden</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero page-hero">
+  <div class="hero-field"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Projects built to the highest standard</h1>
+    <p class="hero-lead">A selection of the football fields and golf courses we've constructed and maintained across Sweden.</p>
+  </div>
+</section>
+
+<section class="section-cream">
+  <div class="container">
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="football">Football</button>
+      <button class="filter-btn" data-filter="golf">Golf</button>
+    </div>
+
+    <div class="grid-projects" id="project-grid">
+
+      <div class="project-card" data-category="football">
+        <div class="project-media football">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7l3.5 2.6-1.3 4.1H9.8L8.5 9.6 12 7z"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Football</span>
+          <h3>Strawberry Arena</h3>
+          <span class="project-loc">Solna, Sweden</span>
+          <p>Construction of a national-standard football pitch at one of Sweden's premier arenas, home to major matches and events.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="football">
+        <div class="project-media football">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7l3.5 2.6-1.3 4.1H9.8L8.5 9.6 12 7z"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Football</span>
+          <h3>Stockholm Stadion</h3>
+          <span class="project-loc">Stockholm, Sweden</span>
+          <p>Pitch construction to the highest standard at Stockholm's historic Olympic stadium.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="football">
+        <div class="project-media football">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7l3.5 2.6-1.3 4.1H9.8L8.5 9.6 12 7z"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Football</span>
+          <h3>Olympia Stadion</h3>
+          <span class="project-loc">Sweden</span>
+          <p>Full pitch construction delivered to the technical standard required for top-level competition.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="golf">
+        <div class="project-media golf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 21V4"/><path d="M6 4l10 3-10 4"/><path d="M4 21h8"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Golf</span>
+          <h3>Bro Hof Slott — Castle Course</h3>
+          <span class="project-loc">Bro, Sweden</span>
+          <p>Construction of the Castle Course at Bro Hof Slott Golf Club, one of Sweden's most celebrated courses.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="golf">
+        <div class="project-media golf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 21V4"/><path d="M6 4l10 3-10 4"/><path d="M4 21h8"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Golf</span>
+          <h3>Bro Hof Slott — Stadium Course</h3>
+          <span class="project-loc">Bro, Sweden</span>
+          <p>Construction of the Stadium Course, host to championship golf events, at Bro Hof Slott Golf Club.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="golf">
+        <div class="project-media golf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 21V4"/><path d="M6 4l10 3-10 4"/><path d="M4 21h8"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Golf</span>
+          <h3>Drottningholm Golf Course</h3>
+          <span class="project-loc">Ekerö, Sweden</span>
+          <p>Golf course construction near the historic Drottningholm area, built to a championship standard.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="golf">
+        <div class="project-media golf">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 21V4"/><path d="M6 4l10 3-10 4"/><path d="M4 21h8"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Golf</span>
+          <h3>Additional Golf Courses</h3>
+          <span class="project-loc">Sweden</span>
+          <p>Several other golf course construction projects across Sweden, each built to the same exacting standard.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="football">
+        <div class="project-media football">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c-4 3-6 6-6 9a6 6 0 0012 0c0-3-2-6-6-9z"/></svg>
+        </div>
+        <div class="project-body">
+          <span class="project-tag">Maintenance</span>
+          <h3>Ongoing Turf Maintenance</h3>
+          <span class="project-loc">Sweden</span>
+          <p>Continued maintenance of synthetic turf and natural grass football fields for clubs across Sweden.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Have a project in mind?</h2>
+    <p>From national arenas to local clubs, we'd love to help you build or maintain your next surface.</p>
+    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Multi Sport Construction AB</div>
+        <p style="color:rgba(238,241,234,0.7); font-size:0.9rem;">Sports field construction and maintenance across Sweden since 2006.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#football">Football Fields</a></li>
+          <li><a href="services.html#golf">Golf Courses</a></li>
+          <li><a href="services.html#tennis">Tennis Courts</a></li>
+          <li><a href="services.html#padel">Padel Courts</a></li>
+          <li><a href="services.html#track">Running Tracks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Murrebovägen 6</li>
+          <li>178 38 Ekerö, Sweden</li>
+          <li><a href="contact.html">Contact form →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Multi Sport Construction AB. All rights reserved.</span>
+      <span>Ekerö, Sweden</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+<script>
+  document.querySelectorAll('.filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.filter-btn').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.dataset.filter;
+      document.querySelectorAll('.project-card').forEach(function (card) {
+        card.hidden = filter !== 'all' && card.dataset.category !== filter;
+      });
+    });
+  });
+</script>
+</body>
+</html>

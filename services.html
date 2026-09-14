@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Multi Sport Construction AB</title>
+<meta name="description" content="Football fields, golf courses, tennis courts, padel courts, running tracks, and turf maintenance — construction services from Multi Sport Construction AB.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .service-block { padding: 70px 0; border-bottom: 1px solid var(--line); }
+  .service-block:last-of-type { border-bottom: none; }
+  .service-layout { display: grid; grid-template-columns: 60px 1fr; gap: 28px; }
+  .service-layout .icon-wrap {
+    width: 56px; height: 56px; border-radius: 12px; background: var(--green-900);
+    display: flex; align-items: center; justify-content: center; color: var(--gold);
+  }
+  .service-layout .icon-wrap svg { width: 28px; height: 28px; }
+  .service-features { list-style: none; margin: 1.2em 0 0; padding: 0; display: grid; gap: 10px; grid-template-columns: 1fr 1fr; }
+  .service-features li { display: flex; gap: 10px; font-size: 0.94rem; color: var(--text-dark); }
+  .service-features .icon { width: 18px; height: 18px; color: var(--green-700); flex: none; margin-top: 3px; }
+  @media (max-width: 700px) { .service-layout { grid-template-columns: 1fr; } .service-features { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="mark">◆</span> Multi Sport Construction
+      <span class="brand-sub">Founded 2006 · Sweden</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" aria-current="page">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero page-hero">
+  <div class="hero-field"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">Our Services</p>
+    <h1>Construction and maintenance for every playing surface</h1>
+    <p class="hero-lead">From football pitches to golf courses, tennis and padel courts, and running tracks — we handle every stage, from groundwork to final finish.</p>
+  </div>
+</section>
+
+<div class="container">
+
+  <div class="service-block" id="football">
+    <div class="service-layout">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7l3.5 2.6-1.3 4.1H9.8L8.5 9.6 12 7z"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">01 — Football</p>
+        <h2>Football Fields</h2>
+        <p>We build football pitches with either synthetic turf or natural grass, engineered to meet the demands of competitive play — including work delivered at Strawberry Arena, Stockholm Stadion and Olympia Stadion.</p>
+        <ul class="service-features">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Synthetic turf pitch construction</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Natural grass pitch construction</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Drainage &amp; sub-base engineering</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Stadium &amp; arena-grade pitches</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-block" id="golf">
+    <div class="service-layout">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 21V4"/><path d="M6 4l10 3-10 4"/><path d="M4 21h8"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">02 — Golf</p>
+        <h2>Golf Courses</h2>
+        <p>We construct fairways, greens and full golf courses to championship standard, including both the Castle Course and Stadium Course at Bro Hof Slott Golf Club, and Drottningholm Golf Course.</p>
+        <ul class="service-features">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Full course construction</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Green &amp; fairway shaping</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Irrigation &amp; drainage systems</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Championship-standard turf</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-block" id="tennis">
+    <div class="service-layout">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18M12 3v18"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">03 — Tennis</p>
+        <h2>Tennis Courts</h2>
+        <p>Precision-built tennis courts with reliable drainage and consistent surfacing, designed for club and private use alike.</p>
+        <ul class="service-features">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Hard court &amp; synthetic surfacing</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Base preparation &amp; drainage</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Line marking &amp; fencing</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Resurfacing of existing courts</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-block" id="padel">
+    <div class="service-layout">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="8" cy="8.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="12" cy="8.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="16" cy="8.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="8" cy="12" r="0.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="0.6" fill="currentColor" stroke="none"/><circle cx="16" cy="12" r="0.6" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">04 — Padel</p>
+        <h2>Padel Courts</h2>
+        <p>Fast-turnaround padel court construction, built to meet international dimension and surface standards for clubs and commercial venues.</p>
+        <ul class="service-features">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Full enclosed court construction</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Synthetic turf infill surfacing</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Glass &amp; mesh wall systems</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Indoor &amp; outdoor installations</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-block" id="track">
+    <div class="service-layout">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="12" rx="9" ry="6"/><ellipse cx="12" cy="12" rx="5" ry="3"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">05 — Athletics</p>
+        <h2>Running Tracks</h2>
+        <p>Durable, consistent running track construction for schools, clubs and athletics venues, built to support both training and competition.</p>
+        <ul class="service-features">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Base shaping &amp; drainage</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Synthetic track surfacing</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Lane marking</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Track resurfacing &amp; repair</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-block" id="maintenance">
+    <div class="service-layout">
+      <div class="icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c-4 3-6 6-6 9a6 6 0 0012 0c0-3-2-6-6-9z"/></svg>
+      </div>
+      <div>
+        <p class="eyebrow">06 — Maintenance</p>
+        <h2>Turf Maintenance</h2>
+        <p>We maintain both synthetic turf and natural grass football fields, helping clubs and venues protect their investment and keep surfaces performing at their best.</p>
+        <ul class="service-features">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Synthetic turf brushing &amp; infill top-up</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Natural grass mowing &amp; aeration</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Seeding &amp; feeding programmes</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12l4 4 10-10"/></svg>Scheduled seasonal inspections</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Not sure which service you need?</h2>
+    <p>Tell us about your site and we'll recommend the right construction or maintenance approach.</p>
+    <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Multi Sport Construction AB</div>
+        <p style="color:rgba(238,241,234,0.7); font-size:0.9rem;">Sports field construction and maintenance across Sweden since 2006.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#football">Football Fields</a></li>
+          <li><a href="services.html#golf">Golf Courses</a></li>
+          <li><a href="services.html#tennis">Tennis Courts</a></li>
+          <li><a href="services.html#padel">Padel Courts</a></li>
+          <li><a href="services.html#track">Running Tracks</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Murrebovägen 6</li>
+          <li>178 38 Ekerö, Sweden</li>
+          <li><a href="contact.html">Contact form →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Multi Sport Construction AB. All rights reserved.</span>
+      <span>Ekerö, Sweden</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
