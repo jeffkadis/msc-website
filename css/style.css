@@ -366,6 +366,7 @@ section { padding: 84px 0; }
 }
 .project-media.football { background: linear-gradient(135deg, #1b6e3c, #0d3820); }
 .project-media.golf { background: linear-gradient(135deg, #2f7d46, #123a24); }
+.project-media-photo { background-size: cover; background-position: center; }
 .project-media .icon { width: 42px; height: 42px; color: var(--gold-light); }
 .project-body { padding: 22px 24px 26px; }
 .project-tag {
